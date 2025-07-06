@@ -3,10 +3,6 @@ venv/
 __pycache__/
 *.pyc
 
-# Model weights & large files
-*.pt
-*.pth
-*.h5
 
 # Data files
 *.zip
