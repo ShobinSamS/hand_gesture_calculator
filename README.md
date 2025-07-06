@@ -37,8 +37,8 @@ After installing the dependencies, run the Streamlit app:
 
 ```bash
 streamlit run app.py
-
-📌 Notes
+```
+###📌 Notes
 Lighting: Ensure you have good lighting conditions for optimal gesture detection performance.
 
 Model Path: Verify that your YOLO model file is placed in the correct directory as expected by the application.
