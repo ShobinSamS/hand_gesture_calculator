@@ -1,0 +1,25 @@
+# Ignore virtual environments & Python cache
+venv/
+__pycache__/
+*.pyc
+
+# Model weights & large files
+*.pt
+*.pth
+*.h5
+
+# Data files
+*.zip
+*.tar
+*.tar.gz
+*.jpg
+*.jpeg
+*.png
+*.mp4
+
+# System files
+.DS_Store
+.idea/
+.vscode/
+.venv
+.env
