@@ -10,8 +10,8 @@ import threading
 
 os.environ["STREAMLIT_SERVER_ENABLE_FILE_WATCHER"] = "false"
 
-import torch
-torch.classes.__path__ = []
+#import torch
+#torch.classes.__path__ = []
 
 # ✅ Config
 MODEL_PATH = os.getenv("MODEL_PATH", "models/best.pt")
