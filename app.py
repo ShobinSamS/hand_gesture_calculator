@@ -154,6 +154,7 @@ with left_col:
         key="stream", 
         mode=WebRtcMode.SENDRECV,
         video_processor_factory=GestureProcessor,
+        async_processing = True,
         media_stream_constraints={"video": True, "audio": False}
     )
 
