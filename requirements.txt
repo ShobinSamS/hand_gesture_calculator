@@ -239,6 +239,7 @@ starlette==0.41.3
 statsmodels==0.14.4
 streamlit==1.44.1
 streamlit-js-eval==0.1.7
+streamlit-webrtc==0.63.3
 strictyaml==1.7.3
 syncer==2.0.3
 tenacity==9.1.2
