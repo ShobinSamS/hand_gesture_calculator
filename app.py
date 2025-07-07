@@ -176,7 +176,7 @@ with left_col:
         # We add a small delay and then force the script to rerun.
         # This creates a continuous loop that checks the queue for new gestures.
         time.sleep(0.1)
-        st.experimental_rerun()
+        st.rerun()
 
 
 
