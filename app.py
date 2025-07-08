@@ -129,7 +129,7 @@ with left_col:
     class GestureProcessor(VideoProcessorBase):
         def __init__(self) -> None:
             super().__init__()
-            self.detection_interval = 3.0  # seconds
+            self.detection_interval = 5.0  # seconds
             self.last_detection_time = time.time()
         
             
@@ -139,7 +139,7 @@ with left_col:
                 img = frame.to_ndarray(format="bgr24")
             except Exception as e:
                 return frame  # skip bad frames
-            # time.sleep(0.5)  # Simulate processing delay
+            time.sleep(0.1)  # Simulate processing delay
             current_time = time.time()
             if current_time - self.last_detection_time > self.detection_interval:
                 self.last_detection_time = current_time
@@ -175,7 +175,7 @@ with left_col:
         # This is the key to the fix:
         # We add a small delay and then force the script to rerun.
         # This creates a continuous loop that checks the queue for new gestures.
-        time.sleep(0.1)
+        time.sleep(1)
         st.rerun()
 
 
